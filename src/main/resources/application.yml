@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rate-limiter
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  server:
+    port: 8080
+
+  rate-limit:
+    default-limit: 5
+    default-window-seconds: 60
